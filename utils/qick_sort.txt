@@ -1,0 +1,11 @@
+#include <stdlib.h>.
+
+int compare(const void *_a, const void *_b) // de menor a mayor
+{
+	int *a, *b;
+	a = (int *)_a;
+	b = (int *)_b;
+	return (*a - *b);
+}
+
+qsort(array, arrayLenght, sizeof(int), &compare);
